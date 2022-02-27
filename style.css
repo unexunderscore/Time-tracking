@@ -3,7 +3,9 @@ body {
     font-size: 18px;
     color: white;
     background-color: hsl(226, 43%, 10%);
+   
 }
+
 
 .Colours {
 color: 
@@ -42,6 +44,7 @@ hsl(236, 100%, 87%);
     margin-top: 15.8rem;
     margin-bottom: 5rem;
     padding: 0 0 0 3rem;
+
 }
 
 .userAvatar {
@@ -66,14 +69,16 @@ h1 {
     background-color: hsl(235, 46%, 20%);
 }
 
-.userSide, .column {
+.userSide {
     width: 255px;
     height: 520px;
     border-radius: 15px;
 }
 
 .column{
+    width: 255px;
     margin: 0 2rem 0 0; 
+    overflow: hidden;
 }
 
 .userSide:hover{
@@ -81,12 +86,18 @@ h1 {
     transition: 0.4s;
 }
 
-.report, .work, .exercise, .play, .social, .study, .selfCare{
-    padding: 2.1rem 2rem 2rem 1.8rem;
+.work, .exercise, .play, .social, .study, .selfCare{
+    border-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-top: 3rem;
+    position: relative;
+    z-index: -3;
 }
 
 
 .report{
+    padding: 2.1rem 2rem 2rem 1.8rem;
     height: 355px;
     background-color: hsl(246, 80%, 60%);
     border-radius: 15px;
@@ -102,4 +113,54 @@ h1 {
 
 .dayLimit:hover, .weekLimit:hover, .monthLimit:hover{
     cursor: pointer;
+}
+
+.boxes{
+    padding: 2.1rem 2rem 2rem 1.8rem;
+    margin-bottom: 2rem;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+
+.icons{
+    text-align: right;
+}
+
+.work-icon, .exercise-icon, .selfCare-icon, .study-icon, .social-icon, .play-icon {
+    position: absolute;
+    z-index: -2;
+    top: -15px;
+    right: 10px;
+    
+}
+
+.exercise-icon {
+    top: 0;
+}
+
+
+
+
+.work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.exercise{
+    background-color: hsl(145, 58%, 55%);
+}
+
+.play{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+.study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.selfCare {
+    background-color: hsl(43, 84%, 65%);
 }

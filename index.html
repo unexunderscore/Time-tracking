@@ -27,8 +27,8 @@
 
   <main>
 
-  <div id="cardLayout" class="container d-flex justify-content-center">
-    <div class="column d-flex flex-column userSide">
+  <div id="cardLayout" class="container d-flex justify-content-center flex-wrap">
+    <div class="d-flex flex-column userSide">
       <div class="report">     
         <img class="userAvatar" src="./images/image-jeremy.png" alt="User avatar">
         <div class="repTitle">Report for</div>
@@ -49,12 +49,13 @@
      </div>
 
      <div class="columns">
-    <div class="column">
+    <div class="column wShadow">
       
       <div class="work">
         <div class="icons"><img class="work-icon" src="./images/icon-work.svg" alt="Work briefcase icon"></div>
         <div class="boxes">
-        Work
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Work</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
+        
         <div class="selectedTimeLimit">
           <div class="hoursNow">
             <div class="time">5hrs</div> 
@@ -66,12 +67,12 @@
       </div>  
     </div> 
   </div>
-    <div class="column">
+    <div class="column eShadow">
 
       <div class="exercise">
         <div class="icons"><img class="exercise-icon" src="./images/icon-exercise.svg" alt="Exercise icon"></div>
         <div class="boxes"> 
-          Exercise
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Exercise</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
         <div class="selectedTimeLimit">
           <div class="hoursNow">
             <div class="time">1hr</div>
@@ -86,10 +87,11 @@
 </div>
 
 <div class="columns">
-    <div class="column">
+    <div class="column pShadow">
       <div class="play">
-        <div class="icons"><img class="exercise-icon" src="./images/icon-play.svg" alt="Exercise icon"></div>
-        <div class="boxes">  Play
+        <div class="icons"><img class="play-icon" src="./images/icon-play.svg" alt="Play icon"></div>
+        <div class="boxes"> 
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Play</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
         <div class="selectedTimeLimit"></div>
           <div class="hoursNow">
             <div class="time">1hr</div>
@@ -100,10 +102,11 @@
         </div>
       </div>
     </div>
-      <div class="column">
+      <div class="column soShadow">
       <div class="social">
-        <div class="icons"><img class="exercise-icon" src="./images/icon-social.svg" alt="Exercise icon"></div>
-        <div class="boxes"> Social
+        <div class="icons"><img class="social-icon" src="./images/icon-social.svg" alt="Social icon"></div>
+        <div class="boxes"> 
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Social</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
         <div class="selectedTimeLimit">
         </div>
           <div class="hoursNow">
@@ -118,10 +121,11 @@
   </div>
   
   <div class="columns">
-    <div class="column">
+    <div class="column stShadow">
       <div class="study">
-        <div class="icons"><img class="exercise-icon" src="./images/icon-study.svg" alt="Exercise icon"></div>
-        <div class="boxes">Study
+        <div class="icons"><img class="study-icon" src="./images/icon-study.svg" alt="Study icon"></div>
+        <div class="boxes">
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Study</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
         <div class="selectedTimeLimit"></div>
           <div class="hoursNow">
           <div class="time">0hr</div>
@@ -131,11 +135,12 @@
         </div>
       </div>
       </div>
-
-      <div class="column">
+    </div>
+      <div class="column seShadow">
       <div class="selfCare">
-        <div class="icons"><img class="exercise-icon" src="./images/icon-self-care.svg" alt="Exercise icon"></div>
-        <div class="boxes"> Self Care
+        <div class="icons"><img class="selfCare-icon" src="./images/icon-self-care.svg" alt="Self care icon"></div>
+        <div class="boxes">
+          <div class="header d-flex justify-content-between"><div class="cardTitle">Self Care</div><div class="threeDot"><img src="./images/icon-ellipsis.svg" alt="Three dot icon"></div></div>
         <div class="selectedTimeLimit"></div>
 
           <div class="hoursNow">

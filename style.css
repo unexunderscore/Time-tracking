@@ -280,6 +280,13 @@ h1 {
     }
     
   }
+
+  @media screen and (max-width: 1200px) {
+    #cardLayout{ 
+        margin-left: 1.6rem;
+       
+    }
+  }
   
   @media screen and (max-width: 775px) {
 

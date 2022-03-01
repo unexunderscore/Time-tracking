@@ -26,7 +26,7 @@
 <body>
 
   <main>
-
+    <div id="print"></div> 
   <div id="cardLayout" class="container d-flex justify-content-center flex-wrap">
     <div class="d-flex flex-column userSide">
       <div class="report">     
@@ -36,13 +36,13 @@
       </div>
       
       <div class="timeLimit">
-        <div class="dayLimit">
+        <div id="day" class="dayLimit chosenTime">
           Daily
         </div>
-        <div class="weekLimit">
+        <div id="week" class="weekLimit">
           Weekly
         </div>
-        <div class="monthLimit">
+        <div id="month" class="monthLimit">
           Monthly
         </div>
       </div>
@@ -58,10 +58,11 @@
         
         <div class="selectedTimeLimit">
           <div class="hoursNow">
-            <div class="time">5hrs</div> 
+            <div class="time">5hrs</div>
+            
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> -</div> <div class="preTime">7hrs</div> 
+            <div class="preData">Yesterday -</div> <div class="preTime">7hrs</div> 
           </div>
         </div>
       </div>  
@@ -78,7 +79,7 @@
             <div class="time">1hr</div>
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> -</div><div class="preTime">1hr</div> 
+            <div class="preData">Yesterday -</div><div class="preTime">1hr</div> 
           </div>
         </div>
     </div>
@@ -97,7 +98,7 @@
             <div class="time">1hr</div>
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> - </div><div class="preTime">2hr</div> 
+            <div class="preData">Yesterday -</div><div class="preTime">2hr</div> 
           </div>
         </div>
         </div>
@@ -113,7 +114,7 @@
             <div class="time">1hr</div>
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> -</div> <div class="preTime">3hr</div> 
+            <div class="preData">Yesterday -</div> <div class="preTime">3hr</div> 
           </div>
         </div>
         </div>
@@ -132,7 +133,7 @@
           <div class="time">0hr</div>
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> - </div><div class="preTime">1hr</div> 
+            <div class="preData">Yesterday -</div><div class="preTime">1hr</div> 
         </div>
       </div>
       </div>
@@ -149,7 +150,7 @@
           <div class="time">0hr</div>
           </div>
           <div class="hoursPrevious">
-            <div class="preData">Last <span>week</span> - </div><div class="preTime">1hr</div>  
+            <div class="preData">Yesterday -</div><div class="preTime">1hr</div>  
         </div>
       </div>
       </div>

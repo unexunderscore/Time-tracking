@@ -90,8 +90,9 @@ h1 {
    
 }
 
-.column:hover {
+.column:hover .boxes{
     cursor: pointer;
+    background-color:rgb(57, 47, 150);
 }
 
 
@@ -136,6 +137,7 @@ h1 {
 }
 
 .dayLimit:hover, .weekLimit:hover, .monthLimit:hover{
+    font-weight: 500;
     color:hsl(195, 74%, 62%);
     cursor: pointer;
 }
@@ -235,6 +237,8 @@ h1 {
     font-weight: 500;
     margin-bottom: 1rem;
 }
+
+
 
 .work .threeDot:hover{
     filter: invert(65%) sepia(19%) saturate(2949%) hue-rotate(321deg) brightness(112%) contrast(101%);

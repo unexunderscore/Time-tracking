@@ -20,7 +20,7 @@ fetch("./data.json")
       for(let i=0; i<=5; i++){
         spentTime[i].textContent = (data[i].timeframes.daily.current + 'hrs')
         lastTime[i].textContent = (data[i].timeframes.daily.previous + 'hrs')
-        console.log(data[i].title + ': ' + data[i].timeframes.daily.current)
+        
       }
 
     })
@@ -32,6 +32,7 @@ fetch("./data.json")
     for(let i=0; i<=5; i++){
     previous[i].textContent = 'Yesterday -';
 }
+
 day.onclick = function() {
   if(week.classList.contains('chosenTime') || month.classList.contains('chosenTime')){
     week.classList.remove('chosenTime');
@@ -46,7 +47,7 @@ day.onclick = function() {
       for(let i=0; i<=5; i++){
         spentTime[i].textContent = (data[i].timeframes.daily.current + 'hrs')
         lastTime[i].textContent = (data[i].timeframes.daily.previous + 'hrs')
-        console.log(data[i].title + ': ' + data[i].timeframes.daily.current)
+        
       }
 
     })
@@ -75,7 +76,7 @@ week.onclick = function() {
     for(let i=0; i<=5; i++){
       spentTime[i].textContent = (data[i].timeframes.weekly.current + 'hrs')
       lastTime[i].textContent = (data[i].timeframes.weekly.previous + 'hrs')
-      console.log(data[i].title + ': ' + data[i].timeframes.weekly.current)
+    
     }
 
   })
@@ -104,7 +105,7 @@ month.onclick = function() {
      for(let i=0; i<=5; i++){
       spentTime[i].textContent = (data[i].timeframes.monthly.current + 'hrs')
       lastTime[i].textContent = (data[i].timeframes.monthly.previous + 'hrs')
-       console.log(data[i].title + ': ' + data[i].timeframes.monthly.current)
+       
      }
  
    })

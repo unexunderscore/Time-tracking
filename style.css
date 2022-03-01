@@ -43,8 +43,6 @@ hsl(236, 100%, 87%);
 #cardLayout{
     margin-top: 15.8rem;
     margin-bottom: 5rem;
-    padding: 0 0 0 3rem;
-
 }
 
 .userAvatar {
@@ -62,6 +60,7 @@ hsl(236, 100%, 87%);
 }
 
 h1 {
+    font-size: 2em;
     font-weight: 300;
     margin-left: 0.2rem;
 }
@@ -258,3 +257,119 @@ h1 {
 .selfCare .threeDot:hover{
     filter: invert(1%) sepia(99%) saturate(3360%) hue-rotate(354deg) brightness(106%) contrast(104%);
 }
+
+
+@media screen and (max-width: 1150px) {
+   
+    #cardLayout{
+        margin-top: 6rem;
+        padding-left: 0.5rem;
+    }
+
+    .userSide {
+        width: 350px;
+        height: 525px;
+        border-radius: 15px;
+        margin: 0 2rem 0 0;
+    }
+    
+    .columns{
+        width: 350px;
+        margin: 0 2rem 0 0; 
+        overflow: hidden;
+    }
+    
+  }
+  
+  @media screen and (max-width: 775px) {
+
+    #cardLayout{ 
+        margin-left: 1.6rem;
+       
+    }
+    .userAvatar{
+        height: 70px;
+        border: 3px solid white;
+        border-radius: 50%;
+        margin: 2rem 1rem 2rem 2rem;
+    }
+
+    .repTitle {
+        margin: 2.5rem 0.5rem 0rem 0rem;
+    }
+
+    h1{
+        font-size: 1.3em;
+    }
+    .report{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        height: 130px;
+        background-color: hsl(246, 80%, 60%);
+        border-radius: 15px;
+    }
+
+    .dayLimit{
+        width: 60px;
+        margin-left: 0rem;
+        
+    }
+   
+    .weekLimit, .monthLimit {
+        margin: 0rem;
+        
+      }
+    
+    .timeLimit{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1.5rem 2rem 0rem 2rem;
+    }
+
+    .userSide {
+        width: 350px;
+        height: 200px;
+        border-radius: 15px;
+        margin: 0 2rem 1.5rem 0;
+    }
+    
+    .columns{
+        width: 350px;
+        margin: 0 2rem 0 0; 
+        overflow: hidden;
+    }
+
+    .column{
+        height: 160px;
+    }
+
+   .time{
+        font-size: 2rem;
+        
+   }
+   .selectedTimeLimit{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .hoursPrevious{
+       align-items: center;
+       text-align: center;
+   }
+
+   .cardTitle {
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+}
+
+    .work, .exercise, .play, .social, .study, .selfCare{
+        padding-top: 2.5rem;
+    }
+
+    .play{
+        order: -5;
+    }
+
+  }

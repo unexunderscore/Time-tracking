@@ -263,7 +263,7 @@ h1 {
    
     #cardLayout{
         margin-top: 6rem;
-        padding-left: 4rem;
+        margin-left: 4rem;
     }
 
     .userSide {
@@ -281,11 +281,13 @@ h1 {
     
   }
 
-  @media screen and (max-width: 830px) {
-    #cardLayout{ 
-        padding-left: 0rem;
-        margin-left: 1.6rem;
+  @media screen and (max-width: 860px) {
+   
+    #cardLayout{
+        margin-top: 6rem;
+        margin-left: auto;
     }
+    
   }
   
   @media screen and (max-width: 775px) {

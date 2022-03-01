@@ -2,7 +2,9 @@
 const greetings = "Hello there!"
 console.log(greetings);
 
-
+// Selecting each of data time
+const spentTime = document.getElementsByClassName('time');
+const lastTime = document.getElementsByClassName('preTime');
 
 // Selecting out the limits.
 const day = document.getElementById('day');
@@ -11,8 +13,25 @@ const month = document.getElementById('month');
 
 let limit = [day, week, month];
 
+fetch("./data.json")
+    .then(response => response.json())
+    .then(data => {
 
+      for(let i=0; i<=5; i++){
+        spentTime[i].textContent = (data[i].timeframes.daily.current + 'hrs')
+        lastTime[i].textContent = (data[i].timeframes.daily.previous + 'hrs')
+        console.log(data[i].title + ': ' + data[i].timeframes.daily.current)
+      }
 
+    })
+    .catch(function (err) {
+      console.log("Fetch problem show: " + err.message);
+    });
+
+    const previous = document.getElementsByClassName('preData');
+    for(let i=0; i<=5; i++){
+    previous[i].textContent = 'Yesterday -';
+}
 day.onclick = function() {
   if(week.classList.contains('chosenTime') || month.classList.contains('chosenTime')){
     week.classList.remove('chosenTime');
@@ -25,6 +44,8 @@ day.onclick = function() {
     .then(data => {
 
       for(let i=0; i<=5; i++){
+        spentTime[i].textContent = (data[i].timeframes.daily.current + 'hrs')
+        lastTime[i].textContent = (data[i].timeframes.daily.previous + 'hrs')
         console.log(data[i].title + ': ' + data[i].timeframes.daily.current)
       }
 
@@ -52,6 +73,8 @@ week.onclick = function() {
   .then(data => {
 
     for(let i=0; i<=5; i++){
+      spentTime[i].textContent = (data[i].timeframes.weekly.current + 'hrs')
+      lastTime[i].textContent = (data[i].timeframes.weekly.previous + 'hrs')
       console.log(data[i].title + ': ' + data[i].timeframes.weekly.current)
     }
 
@@ -79,6 +102,8 @@ month.onclick = function() {
    .then(data => {
  
      for(let i=0; i<=5; i++){
+      spentTime[i].textContent = (data[i].timeframes.monthly.current + 'hrs')
+      lastTime[i].textContent = (data[i].timeframes.monthly.previous + 'hrs')
        console.log(data[i].title + ': ' + data[i].timeframes.monthly.current)
      }
  
@@ -93,8 +118,3 @@ month.onclick = function() {
    previous[i].textContent = 'Last month -';
  }
 };
-
-
-
-
-   

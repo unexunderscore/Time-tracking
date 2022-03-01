@@ -281,10 +281,9 @@ h1 {
     
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 830px) {
     #cardLayout{ 
-        margin-left: 1.6rem;
-       
+        padding-left: 0rem;
     }
   }
   
